@@ -1,8 +1,14 @@
-<div class="container" ng-app="myApp">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Angular </title>
+  </head>
+  <body>
+    <div class="container" ng-app="myApp">
   <div class="row">
     <div class="col-md-12">
       <div class="page-header">
-        <h1>Forgot Password reset task flow</h1>
+        <h1>{{ title }}</h1>
       </div>
     </div>
     
@@ -34,6 +40,21 @@
     </div>
   </script>
   
+  <script type="text/ng-template" id="home.html">
+    <div class="col-md-12">
+      <h3>Home Page</h3>
+    
+      <a ui-sref="login">Back</a>
+    </div>
+  </script>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  </body>
+  </html>
   <script type="text/ng-template" id="home.html">
     <div class="col-md-12">
       <h3>Home Page</h3>
